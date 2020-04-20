@@ -3,11 +3,24 @@
 #include <stdio.h>
 #include <iostream>
 
+unsigned int callCounter;
+
+void printOnNewLine();
+
 int main()
 {
+	callCounter = 0;
     std::cout << "Hello World!\n"; 
-	printf("This is on a differnt line!\n");
+	printOnNewLine();
+	printOnNewLine();
+	printOnNewLine();
+	printOnNewLine();
+	printOnNewLine();
 	return 0;
 }
 
-
+void printOnNewLine()
+{
+	callCounter++;
+	printf("This is on a differnt line! We have called this %d time!\n", callCounter);
+}
