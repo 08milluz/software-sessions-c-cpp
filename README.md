@@ -7,7 +7,9 @@ https://08milluz.com/2020/04/16/software-sessions-c-c-day-1/. Day 2 material
 on: https://08milluz.com/2020/04/20/software-sessions-c-c-day-2/.
 
 Recorded live streams:
+
 Day 1: https://youtu.be/eQZ3f_EOqrk
+
 Day 2: https://youtu.be/ffSyCZma6rA
 
 If you are looking for a good reference book, see below. These are older, but 
