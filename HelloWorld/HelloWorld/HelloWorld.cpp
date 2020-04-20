@@ -5,22 +5,23 @@
 
 unsigned int callCounter;
 
-void printOnNewLine();
+int printOnNewLine(unsigned int value);
 
 int main()
 {
 	callCounter = 0;
+	int returnedFromFrunction = 0;
     std::cout << "Hello World!\n"; 
-	printOnNewLine();
-	printOnNewLine();
-	printOnNewLine();
-	printOnNewLine();
-	printOnNewLine();
-	return 0;
+	for (char i = 0; i < 5; i++)
+	{
+		returnedFromFrunction += printOnNewLine(i+7);
+	}
+	return returnedFromFrunction;
 }
 
-void printOnNewLine()
+int printOnNewLine(unsigned int value)
 {
 	callCounter++;
-	printf("This is on a differnt line! We have called this %d time!\n", callCounter);
+	printf("This is on a differnt line! We have called this %d time!\n", value);
+	return -1 * callCounter;
 }
