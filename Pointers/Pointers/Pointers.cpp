@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <iostream>
 
+#include "PointerFunctions.h"
+
 int main()
 {
 	// Pointer intro
@@ -49,6 +51,16 @@ int main()
 	printf("Value at the 50th integer of memblock: %d\n", memblock[50]);
 
 	free(memblock);
+
+
+	// Using Header File Functions
+	globalVal = 0;
+	const int inc = 1;
+	while (globalVal < 15)
+	{
+		ConstIncGlobalVars(&inc);
+		printf("Value of globalVal is: %d\n", globalVal);
+	}
 
 	return 0;
 }
