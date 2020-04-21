@@ -25,6 +25,30 @@ int main()
 	*b = 8; // the value at the address provided by b is set to 8
 	printf("Value of a %d, value of b %d\n", a, b);
 
+	int* memblock;
+	int** memblockptr;
+	memblock = (int*)malloc(100*sizeof(int));
+
+	*memblock = 5;
+	printf("Value at the first integer of memblock: %d\n", *memblock);
+
+	memblock[0] = 15;
+	printf("Value at the first integer of memblock: %d\n", *memblock);
+
+	memblock[10] = 1000;
+	printf("Value at the tenth integer of memblock: %d\n", memblock[10]);
+
+	memblock += 10;
+	*memblock = 1500;
+	memblock -= 10;
+	printf("Value at the tenth integer of memblock: %d\n", memblock[10]);
+
+	printf("Using memblockptr to set a value.\n");
+	memblockptr = &memblock;
+	(*memblockptr)[50] = 7;
+	printf("Value at the 50th integer of memblock: %d\n", memblock[50]);
+
+	free(memblock);
 
 	return 0;
 }
