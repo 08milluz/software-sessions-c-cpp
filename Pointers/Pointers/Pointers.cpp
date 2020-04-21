@@ -5,6 +5,7 @@
 #include <iostream>
 
 #include "PointerFunctions.h"
+#include "FunctionHeader.h"
 
 int main()
 {
@@ -28,8 +29,8 @@ int main()
 	printf("Value of a %d, value of b %d\n", a, b);
 
 	int* memblock;
-	int** memblockptr;
-	memblock = (int*)malloc(100*sizeof(int));
+	int** memblockptr; // Pointer to a pointer
+	memblock = (int*)malloc(2000000000*sizeof(int)); // This allocates like 7.5 GB of memory, you may need to make this smaller for your comptuer. Also it can take a while.
 
 	*memblock = 5;
 	printf("Value at the first integer of memblock: %d\n", *memblock);
@@ -47,9 +48,10 @@ int main()
 
 	printf("Using memblockptr to set a value.\n");
 	memblockptr = &memblock;
-	(*memblockptr)[50] = 7;
-	printf("Value at the 50th integer of memblock: %d\n", memblock[50]);
+	(*memblockptr)[5000] = 7;
+	printf("Value at the 50th integer of memblock: %d\n", memblock[5000]);
 
+	// Release that memory back to the comptuer.
 	free(memblock);
 
 
@@ -61,6 +63,12 @@ int main()
 		ConstIncGlobalVars(&inc);
 		printf("Value of globalVal is: %d\n", globalVal);
 	}
+
+	// Demo header file functions
+	int Andy = 5;
+	int returnVal = AddOne(Andy);
+	printf("Value of Andy is %d\n", Andy);
+	printf("Value of returnVal is %d\n", returnVal);
 
 	return 0;
 }
