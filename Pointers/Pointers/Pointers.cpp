@@ -36,7 +36,7 @@ int main()
 	printf("Value at the first integer of memblock: %d\n", *memblock);
 
 	memblock[0] = 15;
-	printf("Value at the first integer of memblock: %d\n", *memblock);
+	printf("Value at the first integer of memblock: %d\n", *memblock); 
 
 	memblock[10] = 1000;
 	printf("Value at the tenth integer of memblock: %d\n", memblock[10]);
