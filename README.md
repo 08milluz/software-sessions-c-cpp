@@ -9,6 +9,8 @@ Day 2 material on: https://08milluz.com/2020/04/20/software-sessions-c-c-day-2/.
 
 Day 3 material on: https://08milluz.com/2020/04/21/software-sessions-c-c-day-3/
 
+Day 4 material on: https://08milluz.com/2020/04/21/software-sessions-c-c-day-4/
+
 Recorded live streams:
 
 Day 1: https://youtu.be/eQZ3f_EOqrk - Project "HelloWorld"
@@ -16,6 +18,8 @@ Day 1: https://youtu.be/eQZ3f_EOqrk - Project "HelloWorld"
 Day 2: https://youtu.be/ffSyCZma6rA - Project "Pointers"
 
 Day 3: https://youtu.be/BrIzZFJqZbM - Project "CvsCPP
+
+Day 4: https://youtu.be/YAHhDMb_NSY
 
 If you are looking for a good reference book, see below. These are older, but 
 I still find them really useful: 
