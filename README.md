@@ -19,7 +19,7 @@ Day 2: https://youtu.be/ffSyCZma6rA - Project "Pointers"
 
 Day 3: https://youtu.be/BrIzZFJqZbM - Project "CvsCPP
 
-Day 4: https://youtu.be/YAHhDMb_NSY
+Day 4: https://youtu.be/YAHhDMb_NSY - Networking Folder - Projects "Server" and "Client"
 
 If you are looking for a good reference book, see below. These are older, but 
 I still find them really useful: 
